@@ -17,11 +17,12 @@
         android:background="#FF5534">
 
         <TextView
-            android:id="@+id/delete"
-            android:layout_width="match_parent"
+            android:id="@+id/done"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Delete"
+            android:textAlignment="center"
+            android:text="done"
             android:textColor="#ffffff" />
     </LinearLayout>
 
@@ -34,11 +35,11 @@
         android:background="#02C874">
 
         <TextView
-            android:id="@+id/copyNext"
+            android:id="@+id/add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="copyNext"
+            android:text="add"
             android:textColor="#ffffff" />
     </LinearLayout>
 
@@ -47,46 +48,62 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="8dp">
-
-        <EditText
-            android:id="@+id/item_adsEt"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:singleLine="true"
-            android:focusable="false"
-            android:focusableInTouchMode="false"
-            android:imeOptions="actionDone" />
-
-        <EditText
-            android:id="@+id/item_numsEt"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:singleLine="true"
-            android:focusable="false"
-            android:focusableInTouchMode="false"
-            android:imeOptions="actionDone" />
+        android:padding="8dp"
+        swipe:layout_constraintBottom_toBottomOf="parent"
+        swipe:layout_constraintEnd_toEndOf="parent"
+        swipe:layout_constraintStart_toStartOf="parent"
+        swipe:layout_constraintTop_toTopOf="parent"
+        swipe:layout_constraintVertical_bias="0.0">
 
         <EditText
             android:id="@+id/item_flavorEt"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:singleLine="true"
             android:focusable="false"
             android:focusableInTouchMode="false"
-            android:imeOptions="actionDone" />
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textSize="10sp" />
 
         <EditText
             android:id="@+id/item_deliveryDateEt"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/item_adsEt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/item_ice"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_no"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:singleLine="true"
-            android:focusable="false"
-            android:focusableInTouchMode="false"
-            android:imeOptions="actionDone" />
+            android:gravity="center"
+            android:textSize="12sp" />
+
     </LinearLayout>
 </com.daimajia.swipe.SwipeLayout>
